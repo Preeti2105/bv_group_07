@@ -3,6 +3,15 @@ import Layout from "../components/Layout/Layout"
 import Image from "../components/Images/Images"
 const autocad = () => {
   return <Layout>
+    <div class="ad">
+    <div class="robo">
+    <div class="robo_img">
+    <Image
+            className="d-block mx-lg-auto img-fluid"
+            filename="autobg.jpg"
+            alt="1"
+          />
+          </div>
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -48,7 +57,7 @@ const autocad = () => {
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <main class="px-3 text-center bg-info">
+  <main class="px-3 text-center">
     <br></br>
     <br></br>
     <h1>Course Overview</h1>
@@ -78,6 +87,8 @@ On a daily basis we talk to companies expert in these domains to fine tune our c
 <p class="lead">This course will teach learners to publish and use collaboration tools. They will learn how to manage layers and use the right tools. They will also be fed to hands-on projects by professional Autocad institutes, which they can use in their portfolio while applying for jobs after the course completion.
 </p>
   </main>
+  </div>
+  </div>
   </Layout>
 }
 export default autocad

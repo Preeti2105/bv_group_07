@@ -1,11 +1,17 @@
 import React from "react"
 import {Link} from "gatsby"
-
+import Image from "../Images/Images"
 const Header = () => {
   return (
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" aria-label="Fifth navbar example">
     <div class="container-fluid">
-      <a class="navbar-brand">GROUP-7</a>
+    <div class="log">
+      <Image
+            className="d-block mx-lg-auto img-fluid"
+            filename="logo.jpg"
+            alt="1"
+          />
+          </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -35,14 +41,18 @@ const Header = () => {
               <li><a class="dropdown-item" href="/robotics">ROBOTICS</a></li>
             </ul>
           </li> }
+
         </ul>
-        <form>
-          <input class="form-control" type="text" placeholder="Search" aria-label="Search"></input>.
-        </form>
-      </div>
+        <div class="text-end">
+          <a class="text-end" href="/log">
+          <button type="button" class="btn btn-outline-light me-2">Join Us</button>
+          </a>
+        </div>
+       </div>
     </div>
   </nav>
   )
+  
 }
 
 export default Header

@@ -1,17 +1,22 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
+import Image from "../components/Images/Images"
 const query = () => {
   return (
+    <div class="back">
     <Layout>
-      <div class="bg-success bg-opacity-75">
-      <br></br>
-<br></br>
-<h1 class="text-center text-light">Let Us Answer Your Questions</h1>
-<br></br>
-<p class="lead text-center text-light"><h5>Have questions? Look no further. Our Frequently Asked Questions (FAQ) make it easy for you to find answers to your most pressing inquiries into the School of Education. If you can't find your answer here, please feel free to contact us or use our site search to find the information you need.</h5></p>
-      <br></br>
-      <br></br>
-      </div>
+      
+    
+      
+     <div class="image">
+      <Image
+        className="d-block mx-lg-auto img-fluid"
+        filename="faqq.jpg"
+        alt="1" />
+    
+      
+
+</div>
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
@@ -32,7 +37,7 @@ const query = () => {
             aria-labelledby="headingOne"
             data-bs-parent="#accordionExample"
           >
-            <div class="accordion-body bg-info">
+            <div class="accordion-body bg-info bg-opacity-25">
               <p>
                 “Graduation” will occur after a student has satisfied all of the
                 academic requirements of his/her program of study. However,
@@ -215,6 +220,7 @@ const query = () => {
       </div>
     </div>
     </Layout>
+    </div>
   )
 }
 export default query

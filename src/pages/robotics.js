@@ -3,6 +3,15 @@ import Layout from "../components/Layout/Layout"
 import Image from "../components/Images/Images"
 const robotics = () => {
   return <Layout>
+    <div class="rb">
+    <div class="robo">
+    <div class="robo_img">
+    <Image
+            className="d-block mx-lg-auto img-fluid"
+            filename="rbbg.jpg"
+            alt="1"
+          />
+          </div>
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -48,7 +57,7 @@ const robotics = () => {
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <main class="px-3 text-center bg-info">
+  <main class="px-3 text-center">
     <br></br>
     <br></br>
     <h1>Course Overview</h1>
@@ -68,6 +77,8 @@ const robotics = () => {
     <br></br>
     <br></br>
   </main>
+  </div>
+  </div>
   </Layout>
 }
 export default robotics
